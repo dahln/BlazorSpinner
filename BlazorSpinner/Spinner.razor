@@ -1,0 +1,64 @@
+﻿@inject SpinnerService _spinnerService
+
+<style>
+    .loading-container {
+        z-index: 5000;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .loading-container i {
+        color: white;
+    }
+
+    .loading-icon {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        margin-left: -55px; /* Negative half of width. */
+    }
+
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 4000;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+@if (IsVisible)
+{
+
+    <div class="loading-overlay">
+        <div class="loading-container mx-auto">
+            <i class="loading-icon fas fa-circle-notch fa-7x fa-spin"></i>
+        </div>
+    </div>
+}
+@code
+{
+    protected bool IsVisible { get; set; }
+    protected override void OnInitialized()
+    {
+        _spinnerService.OnShow += ShowLoadingSpinner;
+        _spinnerService.OnHide += HideLoadingSpinner;
+    }
+
+    public void ShowLoadingSpinner()
+    {
+        IsVisible = true;
+        if (IsVisible == true)
+            StateHasChanged();
+    }
+
+    async public void HideLoadingSpinner()
+    {
+        IsVisible = false;
+        await Task.Delay(500);
+
+        if (IsVisible == false)
+            StateHasChanged();
+    }
+}
