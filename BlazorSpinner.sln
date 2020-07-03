@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSpinner", "BlazorSpinner\BlazorSpinner.csproj", "{7DF8AABD-E82E-45AA-B3A5-6EB6F0B29DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSpinner", "BlazorSpinner\BlazorSpinner.csproj", "{7DF8AABD-E82E-45AA-B3A5-6EB6F0B29DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpinnerDemo", "SpinnerDemo\SpinnerDemo.csproj", "{9EEEE682-F6B5-45C0-908B-AACC9E1A82FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7DF8AABD-E82E-45AA-B3A5-6EB6F0B29DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DF8AABD-E82E-45AA-B3A5-6EB6F0B29DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DF8AABD-E82E-45AA-B3A5-6EB6F0B29DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEEE682-F6B5-45C0-908B-AACC9E1A82FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEEE682-F6B5-45C0-908B-AACC9E1A82FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEEE682-F6B5-45C0-908B-AACC9E1A82FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEEE682-F6B5-45C0-908B-AACC9E1A82FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
