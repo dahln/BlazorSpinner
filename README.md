@@ -17,3 +17,7 @@ Call the spinner on any long-running calls or processes (such as API calls).
 The SpinnerDemo project (part of this repo/project) demonstrates how to this spinner works: https://github.com/dahln/blazorspinner/tree/master/SpinnerDemo
 
 This spinner is also included in "depot" a free, open-source CRM: https://github.com/dahln/depot
+
+
+# Credit
+BlazorSpinner uses an icon (https://fontawesome.com/icons/circle-notch?style=solid) from FontAwesome. SVG is directly embedded in this library. Height, Width, Color are modified. For more details, please refer to the license at FontAwesome: https://fontawesome.com/license 
