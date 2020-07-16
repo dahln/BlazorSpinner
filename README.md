@@ -2,6 +2,10 @@
 
 BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.
 
+# Demo
+
+See the spinner in action: http://blazorspinner.azurewebsites.net/
+
 # Setup
 
 1. Install the library from Nuget: https://www.nuget.org/packages/BlazorSpinner/
