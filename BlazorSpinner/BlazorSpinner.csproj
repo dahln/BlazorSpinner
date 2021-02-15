@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.3" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <VersionPrefix>1.1.0</VersionPrefix>
+    <Authors>dahln</Authors>
+    <Description>BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.</Description>
+    <License>https://github.com/dahln/blazorspinner/blob/master/LICENSE</License>
+    <RepositoryUrl>https://github.com/dahln/blazorspinner</RepositoryUrl>
+    <RepositoryType>GitHUb</RepositoryType>
+    <Copyright>Copyright (c) 2021 dahln</Copyright>
+    <PackageTags>blazor,spinner,loading</PackageTags>
+  </PropertyGroup>
+
+</Project>
