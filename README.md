@@ -4,7 +4,7 @@ BlazorSpinner is a loading spinner that can be included in Blazor applications. 
 
 # Demo
 
-See the spinner in action: http://blazorspinner.azurewebsites.net/
+See the spinner in action: http://ghostlight.dahln.io. 
 
 # Setup
 
@@ -19,8 +19,6 @@ See the spinner in action: http://blazorspinner.azurewebsites.net/
 Call the spinner on any long-running calls or processes (such as API calls).
 
 The SpinnerDemo project (part of this repo/project) demonstrates how to this spinner works: https://github.com/dahln/blazorspinner/tree/master/SpinnerDemo
-
-This spinner is also included in "depot" a free, open-source CRM: https://github.com/dahln/depot
 
 
 # Credit
