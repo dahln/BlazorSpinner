@@ -4,7 +4,10 @@ BlazorSpinner is a loading spinner that can be included in Blazor applications. 
 
 # Demo
 
-See the spinner in action: http://ghostlight.dahln.io. 
+See the spinner in action: http://ghostlight.dahln.io.
+
+This is a screen shot of the spinner 
+![Screen Shot](https://github.com/dahln/blazorspinner/blob/master/BlazorSpinnerScreenShot.png)
 
 # Setup
 
