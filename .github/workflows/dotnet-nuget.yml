@@ -5,7 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+    
 jobs:
   build:
 
@@ -21,3 +21,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Push
+      run: dotnet nuget push "**/*.nupkg" --skip-duplicate --no-symbols true --api-key ${{secrets.BLAZORSPINNER_KEY}} --source https://api.nuget.org/v3/index.json
