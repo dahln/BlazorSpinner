@@ -1,3 +1,5 @@
+[![.NET CI/CD](https://github.com/dahln/blazorspinner/actions/workflows/dotnet-nuget.yml/badge.svg)](https://github.com/dahln/blazorspinner/actions/workflows/dotnet-nuget.yml)
+
 # BlazorSpinner
 
 BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.
