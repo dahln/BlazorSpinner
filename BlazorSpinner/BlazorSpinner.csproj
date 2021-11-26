@@ -10,12 +10,14 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <VersionPrefix>1.2.0</VersionPrefix>
+    <Version>1.2.0</Version>
     <Authors>dahln</Authors>
+    <PackageReleaseNotes>Update to .NET 6</PackageReleaseNotes>
     <Description>BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.</Description>
-    <License>https://github.com/dahln/blazorspinner/blob/master/LICENSE</License>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<License>https://github.com/dahln/blazorspinner/blob/master/LICENSE</License>
     <RepositoryUrl>https://github.com/dahln/blazorspinner</RepositoryUrl>
-    <RepositoryType>GitHUb</RepositoryType>
+    <RepositoryType>GitHub</RepositoryType>
     <Copyright>Copyright (c) 2021 dahln</Copyright>
     <PackageTags>blazor,spinner,loading</PackageTags>
   </PropertyGroup>
