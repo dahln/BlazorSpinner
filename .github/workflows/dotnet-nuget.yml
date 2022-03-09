@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Push
-      run: dotnet nuget push "**/*.nupkg" --skip-duplicate --no-symbols true --api-key ${{secrets.BLAZORSPINNER_KEY}} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "**/*.nupkg" --skip-duplicate --api-key ${{secrets.BLAZORSPINNER_KEY}} --source https://api.nuget.org/v3/index.json
