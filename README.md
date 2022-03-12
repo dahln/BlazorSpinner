@@ -4,6 +4,10 @@
 
 BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.
 
+# Demo
+
+Demo link: https://red-bay-06d0ccf10.1.azurestaticapps.net
+
 This is a screen shot of the spinner 
 ![Screen Shot](https://github.com/dahln/blazorspinner/blob/master/BlazorSpinnerScreenShot.png)
 
