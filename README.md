@@ -7,7 +7,6 @@ BlazorSpinner is a loading spinner that can be included in Blazor applications. 
 This is a screen shot of the spinner 
 ![Screen Shot](https://github.com/dahln/blazorspinner/blob/master/BlazorSpinnerScreenShot.png)
 
-
 # Setup
 
 1. Install the library from Nuget: https://www.nuget.org/packages/BlazorSpinner/
