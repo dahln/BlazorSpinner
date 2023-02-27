@@ -1,4 +1,5 @@
-[![.NET CI/CD](https://github.com/dahln/blazorspinner/actions/workflows/dotnet-nuget.yml/badge.svg)](https://github.com/dahln/blazorspinner/actions/workflows/dotnet-nuget.yml)
+[![.NET CI/CD Nuget](https://github.com/shadowlings/BlazorSpinner/actions/workflows/dotnet-nuget.yml/badge.svg)](https://github.com/shadowlings/BlazorSpinner/actions/workflows/dotnet-nuget.yml)
+[![Azure Static Web Apps CI/CD](https://github.com/shadowlings/BlazorSpinner/actions/workflows/azure-static-web-apps-red-bay-06d0ccf10.yml/badge.svg)](https://github.com/shadowlings/BlazorSpinner/actions/workflows/azure-static-web-apps-red-bay-06d0ccf10.yml)
 
 # BlazorSpinner
 
