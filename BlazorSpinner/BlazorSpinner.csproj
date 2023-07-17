@@ -10,15 +10,15 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <Version>1.4.1</Version>
-    <Authors>shadowlings</Authors>
-    <PackageReleaseNotes>v1.4.1: Updated to .NET 7. Updated license and repo URL's to organization.</PackageReleaseNotes>
+    <Version>1.4.2</Version>
+    <Authors>dahln</Authors>
+    <PackageReleaseNotes>v1.4.2: Updated package organizational data</PackageReleaseNotes>
     <Description>BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<License>https://github.com/shadowlings/blazorspinner/blob/master/LICENSE</License>
-    <RepositoryUrl>https://github.com/shadowlings/blazorspinner</RepositoryUrl>
+	<License>https://github.com/dahln/blazorspinner/blob/master/LICENSE</License>
+    <RepositoryUrl>https://github.com/dahln/blazorspinner</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <Copyright>Copyright (c) 2023 Shadowlings</Copyright>
+    <Copyright>Copyright (c) 2023 Dahln Farnes</Copyright>
     <PackageTags>blazor,spinner,loading</PackageTags>
   </PropertyGroup>
 
