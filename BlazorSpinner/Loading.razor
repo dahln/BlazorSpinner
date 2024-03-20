@@ -1,0 +1,65 @@
+﻿@inject LoadingService _loadingService
+
+<style>
+
+    .loading-container {
+        z-index: 5000;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        z-index: 4000;
+        width: 100%;
+        height: 100%;
+    }
+
+    .loading {
+        color: white;
+        text-align: center;
+        margin-top: 200px;
+        font-weight: 100 ;
+    }
+
+
+</style>
+@if (IsVisible)
+{
+
+    <div class="loading-overlay">
+        <div class="loading-container">
+            
+            <h1 class="loading">Loading...</h1>
+           
+        </div>
+    </div>
+}
+@code
+{
+    protected bool IsVisible { get; set; }
+    protected override void OnInitialized()
+    {
+        _loadingService.OnShow += ShowLoadingSpinner;
+        _loadingService.OnHide += HideLoadingSpinner;
+    }
+
+    public void ShowLoadingSpinner()
+    {
+        IsVisible = true;
+        if (IsVisible == true)
+            StateHasChanged();
+    }
+
+    async public void HideLoadingSpinner()
+    {
+        IsVisible = false;
+        await Task.Delay(500);
+
+        if (IsVisible == false)
+            StateHasChanged();
+    }
+}

@@ -1,9 +1,11 @@
 ﻿@page "/"
 @inject BlazorSpinner.SpinnerService _spinnerService
+@inject BlazorSpinner.LoadingService _loadingService
 
 <h1>BlazorSpinner Demo</h1>
 
-<input type="button" value="Start Loading Spinner (5 second demo)" class="btn btn-primary" @onclick="StartSpinner" />
+<input type="button" value="Start Loading Spinner (5 second demo)" class="btn btn-primary mt-2" @onclick="StartSpinner" />
+<input type="button" value="Start Loading Text (5 second demo)" class="btn btn-primary mt-2" @onclick="StartLoading" />
 
 <p>
     A normal usage of this loader would involve calling .Show() at the beginning of an API (or other potential long running task).
@@ -25,5 +27,14 @@
         await Task.Delay(5000);
 
         _spinnerService.Hide();
+    }
+
+    async public Task StartLoading()
+    {
+        _loadingService.Show();
+
+        await Task.Delay(5000);
+
+        _loadingService.Hide();
     }
 }
