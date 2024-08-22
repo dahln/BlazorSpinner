@@ -10,23 +10,42 @@ BlazorSpinner is a loading spinner that can be included in Blazor applications. 
 Demo link: https://red-bay-06d0ccf10.1.azurestaticapps.net
 
 This is a screen shot of the spinner 
-![Screen Shot](https://github.com/dahln/blazorspinner/blob/master/BlazorSpinnerScreenShot.png)
+![Screen Shot](https://raw.githubusercontent.com/dahln/BlazorSpinner/master/BlazorSpinnerScreenShot.png)
 
-# Setup
+# Basic Setup
+Review the demo project for details on how to implement the spinner.
 
 1. Install the library from Nuget: https://www.nuget.org/packages/BlazorSpinner/
 2. Add "```@using BlazorSpinner```" in your _Imports.razor
 3. Add "```builder.Services.AddScoped<SpinnerService>();```" in your Program.cs file
-    - Or Add "```builder.Services.AddScoped<LoadingService>();```" in your Program.cs file
 4. Add "```<Spinner></Spinner>```" to your MainLayout.razor file
-    - Or Add "```<Loading></Loading>```" to your MainLayout.razor file
 5. On any page you want to call the spinner from, inject the SpinnerService into it: ```@inject BlazorSpinner.SpinnerService _spinnerService```
-    - Or Add  ```@inject BlazorSpinner.LoadingService _loadingService```
-    - (NOTE: You can also do this in other service to, just inject it via the constructor)
 6. Call ```_spinnerService.Show()``` or ```_spinnerService.Hide()``` to "Show" or "Hide" the spinner.
-    - If you are using the text loading spinner, adjust this call to use the _loadingService.
   
 Call the spinner on any long-running calls or processes (such as API calls).
 
-# Credit
-BlazorSpinner uses an icon (https://fontawesome.com/icons/circle-notch?style=solid) from FontAwesome. SVG is directly embedded in this library. Height, Width, Color are modified. For more details, please refer to the license at FontAwesome: https://fontawesome.com/license 
+# Customizing Loading Icon
+You can use your own SVG for the loading icon, instead of the default spinner. 
+1. Copy your SVG file into the 'wwwroot' of your application. 
+2. In the MainLayout.razor, set the 'Type' parameter to 'SpinnerType.Icon' for the Spinner component.
+3. In the MainLayout.razor, set the 'Icon' parameter to the path to your SVG file.
+4. Example: 
+    ```
+    <Spinner Type="@SpinnerType.Icon" Icon="loading.svg"></Spinner>
+    ```
+
+
+# Customizing Loading Text
+You can use your own SVG for the loading icon, instead of the default spinner. 
+1. In the MainLayout.razor, set the 'Type' parameter to 'SpinnerType.Text' for the Spinner component.
+3. In the MainLayout.razor, set the 'Text' parameter to the text you want
+4. Example: 
+    ```
+    <Spinner Type="@SpinnerType.Text" Text="Processing...""></Spinner>
+    ```
+# v2 => v3 Breaking Changes
+The 'Loading' component and service have been merged with the 'Spinner' componet and service. Applications that have previously used the 'Loading' component and service need to be updated to use the 'Spinner' component and service. 
+
+
+# Icon Source
+- https://loading.io/ 
