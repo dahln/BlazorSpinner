@@ -25,6 +25,7 @@
     <PackageLicense>https://github.com/dahln/blazorspinner/blob/master/LICENSE</PackageLicense>
     <RepositoryUrl>https://github.com/dahln/blazorspinner</RepositoryUrl>
     <PackageProjectUrl>https://github.com/dahln/blazorspinner</PackageProjectUrl>
+    <PackageReadmeFile>../README.md</PackageReadmeFile>
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>Copyright (c) 2025 Dahln Farnes</Copyright>
     <PackageTags>blazor,spinner,loading</PackageTags>
