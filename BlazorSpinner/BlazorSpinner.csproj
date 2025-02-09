@@ -1,25 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-	  <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.1" />
   </ItemGroup>
 
   <PropertyGroup>
-    <Version>3.0.0</Version>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Version>3.1.0</Version>
     <Authors>dahln</Authors>
-    <PackageReleaseNotes>v3.0.0: Customize loading icon and customize loading text.</PackageReleaseNotes>
+    <PackageReleaseNotes>v3.1.0: Added .NET 9 support.</PackageReleaseNotes>
     <Description>BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" a loading icon or loading text.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<License>https://github.com/dahln/blazorspinner/blob/master/LICENSE</License>
+	  <License>https://github.com/dahln/blazorspinner/blob/master/LICENSE</License>
+    <PackageLicense>https://github.com/dahln/blazorspinner/blob/master/LICENSE</PackageLicense>
     <RepositoryUrl>https://github.com/dahln/blazorspinner</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dahln/blazorspinner</PackageProjectUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <Copyright>Copyright (c) 2024 Dahln Farnes</Copyright>
+    <Copyright>Copyright (c) 2025 Dahln Farnes</Copyright>
     <PackageTags>blazor,spinner,loading</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
 </Project>
