@@ -7,6 +7,7 @@ BlazorSpinner is a loading spinner that can be included in Blazor applications. 
 
 [![NuGet](https://img.shields.io/nuget/v/BlazorSpinner.svg)](https://www.nuget.org/packages/BlazorSpinner/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/BlazorSpinner.svg)](https://www.nuget.org/packages/BlazorSpinner/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Demo
 
@@ -47,12 +48,13 @@ You can use your own SVG for the loading icon, instead of the default spinner.
     <Spinner Type="@SpinnerType.Text" Text="Processing...""></Spinner>
     ```
 
-# v4
-v4 targets .NET 10. If your application uses previous versions of .NET then use previous version of the spinner - previous versions are still available on NuGet.
-
 # v2 => v3 Breaking Changes
 The 'Loading' component and service have been merged with the 'Spinner' componet and service. Applications that have previously used the 'Loading' component and service need to be updated to use the 'Spinner' component and service. 
 
+# License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Starting with v4.0.0, BlazorSpinner uses the MIT License for clearer licensing terms and better compatibility with modern open-source projects.
 
 # Icon Source
-- https://loading.io/ 
+- https://loading.io/
