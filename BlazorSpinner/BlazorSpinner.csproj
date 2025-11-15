@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Version>4.0.0</Version>
     <Authors>dahln</Authors>
-    <PackageReleaseNotes>v4.0.0: Upgraded to .NET 10.0 (breaking change - net8.0/net9.0 support removed, use v3.1.1 for previous frameworks). Enhanced NuGet package with README, SourceLink, and symbol packages.</PackageReleaseNotes>
+    <PackageReleaseNotes>v4.0.0: Upgraded to .NET 10.0 (breaking change - net8.0/net9.0 continue use v3.1.1 for previous frameworks). Enhanced NuGet package with README, SourceLink, and symbol packages.</PackageReleaseNotes>
     <Description>BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" a loading icon or loading text.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/dahln/blazorspinner</RepositoryUrl>
