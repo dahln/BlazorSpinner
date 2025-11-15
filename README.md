@@ -1,9 +1,12 @@
-[![.NET CI/CD Nuget](https://github.com/shadowlings/BlazorSpinner/actions/workflows/dotnet-nuget.yml/badge.svg)](https://github.com/shadowlings/BlazorSpinner/actions/workflows/dotnet-nuget.yml)
-[![Azure Static Web Apps CI/CD](https://github.com/shadowlings/BlazorSpinner/actions/workflows/azure-static-web-apps-red-bay-06d0ccf10.yml/badge.svg)](https://github.com/shadowlings/BlazorSpinner/actions/workflows/azure-static-web-apps-red-bay-06d0ccf10.yml)
+[![.NET CI/CD Nuget](https://github.com/dahln/blazorspinner/actions/workflows/dotnet-nuget.yml/badge.svg)](https://github.com/dahln/blazorspinner/actions/workflows/dotnet-nuget.yml)
+[![Azure Static Web Apps CI/CD](https://github.com/dahln/blazorspinner/actions/workflows/azure-static-web-apps-red-bay-06d0ccf10.yml/badge.svg)](https://github.com/dahln/blazorspinner/actions/workflows/azure-static-web-apps-red-bay-06d0ccf10.yml)
 
 # BlazorSpinner
 
 BlazorSpinner is a loading spinner that can be included in Blazor applications. It has a simple service that can be called to "show" or "hide" the spinner.
+
+[![NuGet](https://img.shields.io/nuget/v/BlazorSpinner.svg)](https://www.nuget.org/packages/BlazorSpinner/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/BlazorSpinner.svg)](https://www.nuget.org/packages/BlazorSpinner/)
 
 # Demo
 
