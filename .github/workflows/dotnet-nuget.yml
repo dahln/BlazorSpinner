@@ -3,22 +3,33 @@ name: .NET CI/CD NuGet
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'BlazorSpinner/**'
+      - '.github/workflows/dotnet-nuget.yml'
+    tags:
+      - 'v*.*.*'  # Trigger on version tags like v1.7.2
   pull_request:
     branches: [ master ]
+    paths:
+      - 'BlazorSpinner/**'
+      - '.github/workflows/dotnet-nuget.yml'
     
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Get full history for versioning
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 9.0.x
+        dotnet-version: | 
+          9.0.x
+          10.0.x
 
     - name: Restore dependencies
       run: dotnet restore
@@ -26,11 +37,30 @@ jobs:
     - name: Build
       run: dotnet build BlazorSpinner --no-restore --configuration Release
 
+    - name: Test
+      run: dotnet test --no-build --configuration Release --verbosity normal
+      continue-on-error: true  # Remove if you have tests
+
     - name: Pack NuGet Package
       run: dotnet pack BlazorSpinner --no-build --configuration Release --output nupkg
+    
+    - name: Get timestamp
+      id: timestamp
+      run: echo "timestamp=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
+    # Only publish on master branch commits (not PRs)
     - name: Push to NuGet.org
+      if: github.event_name != 'pull_request'
       run: dotnet nuget push "nupkg/*.nupkg" --skip-duplicate --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
 
-    - name: Push to GitHub Packages
-      run: dotnet nuget push "nupkg/*.nupkg" --skip-duplicate --api-key ${{ secrets.PATGITHUB }} --source https://nuget.pkg.github.com/dahln/index.json
+    # Create GitHub Release when publishing to NuGet
+    - name: Create GitHub Release
+      if: github.event_name != 'pull_request'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: release-${{ steps.timestamp.outputs.timestamp }}
+        name: Release ${{ steps.timestamp.outputs.timestamp }}
+        files: nupkg/*.nupkg
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
