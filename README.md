@@ -46,6 +46,10 @@ You can use your own SVG for the loading icon, instead of the default spinner.
     ```
     <Spinner Type="@SpinnerType.Text" Text="Processing...""></Spinner>
     ```
+
+# v4
+v4 targets .NET 10. If your application uses previous versions of .NET then use previous version of the spinner - previous versions are still available on NuGet.
+
 # v2 => v3 Breaking Changes
 The 'Loading' component and service have been merged with the 'Spinner' componet and service. Applications that have previously used the 'Loading' component and service need to be updated to use the 'Spinner' component and service. 
 
